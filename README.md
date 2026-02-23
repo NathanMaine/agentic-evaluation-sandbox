@@ -299,9 +299,9 @@ class RunRecord:
 
 - [x] Phase 1: Scenario model and basic runner
 - [x] Phase 2: Evidence logging and scoring
-- [ ] Phase 3: Real agent integration (replace stubs)
-- [ ] Phase 4: Multi-agent adversarial scenarios
-- [ ] Phase 5: Visualization dashboard
+- [x] Phase 3: Real agent integration — implemented via [cmmc-scenario-holdout](https://github.com/NathanMaine/cmmc-scenario-holdout) (140 black-box behavioral scenarios against a live CMMC platform digital twin)
+- [x] Phase 4: Multi-agent adversarial scenarios — prompt injection, privilege escalation, CUI exfiltration, and social engineering scenarios across 10 categories
+- [x] Phase 5: Visualization dashboard — Dark Factory results dashboard with category heatmaps, CMMC control coverage, and finding timelines
 
 ---
 
@@ -336,4 +336,4 @@ MIT - See [LICENSE](LICENSE) for details.
 
 ---
 
-> **Note:** This is a research prototype with stubbed Doer/Judge implementations. Real agent integration is planned for Phase 3. Outputs are for development and testing purposes.
+> **Note:** Originally created December 2025 as the foundational Dark Factory framework. Real agent integration was achieved via [cmmc-scenario-holdout](https://github.com/NathanMaine/cmmc-scenario-holdout) — 140 blind behavioral scenarios that caught 3 real security bugs in the first sweep. See also: [cmmc-expert-platform](https://github.com/NathanMaine/cmmc-expert-platform).
