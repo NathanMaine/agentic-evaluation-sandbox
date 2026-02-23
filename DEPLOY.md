@@ -55,7 +55,7 @@ git push origin main
 
 ## Step 4: Run the live demo
 
-For a live demo with Justin McCarthy, run all three in sequence:
+For a live demo, run all three in sequence:
 
 ```bash
 #!/bin/bash
@@ -78,7 +78,7 @@ echo "=== EVIDENCE AUDIT TRAIL ==="
 cat out/demo/*/evidence.jsonl | python3 -m json.tool | head -60
 ```
 
-## What to show Justin McCarthy in the demo
+## What to show in the demo
 
 1. **The scenario YAML** — show that it's stored outside the codebase. The agent never sees this file. This is the holdout set.
 
@@ -88,8 +88,3 @@ cat out/demo/*/evidence.jsonl | python3 -m json.tool | head -60
 
 4. **The architecture diagram** in scenarios/README.md — factory builds, AES validates, humans evaluate outcomes not code.
 
-## The talking point
-
-"StrongDM built the factory. I independently built the evaluation harness that wraps around any factory.
-Your factory needs exactly this — a holdout scenario evaluator that the agent cannot game,
-with a tamper-evident audit trail for every run. I built it before I knew you existed."
